@@ -1,0 +1,39 @@
+# macOS / Xcode / Swift
+.DS_Store
+DerivedData/
+build/
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+*.ipa
+*.dSYM
+*.dSYM.zip
+# Local signing and credentials
+*.p12
+*.mobileprovision
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+Secrets.xcconfig
+*.local.xcconfig
+# Backend development
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+dist/
+coverage/
+# Private camera data and local databases
+data/
+captures/
+recordings/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+# Keep Package.resolved tracked for app reproducibility.
