@@ -4,7 +4,7 @@ Visual memory for everyday objects, built for Ray-Ban Meta Gen 2 and an iPhone d
 ## The experience
 Remember where you put your keys, then ask where they were last seen. FindIt will connect an intentional glasses capture to an object, time, and scene description; retrieve evidence later; and guide a fresh search when the object may have moved.
 
-**Status:** planning scaffold. There is no runnable FindIt app or backend yet; device compatibility and model quality still need testing.
+**Status:** runnable local evidence-memory prototype; official camera baseline and live Baseten vision remain unverified. No FindIt iPhone app yet. See [next milestone and physical-device runbook](docs/NEXT_MILESTONE.md).
 
 ## MVP
 - User starts a visible capture session and saves an observation.
@@ -24,7 +24,7 @@ This is a temporal remember → retrieve → verify workflow, intended to go bey
 
 ## Planned layout
 `ios/` SwiftUI companion app; `backend/` model gateway; `docs/` design and setup.
-Only documentation is initialized today. Provider keys must stay on the server.
+The `backend/findit.py` local CLI supports intentional image upload, validated model claims, evidence storage and historical retrieval. Provider keys stay in the Mac environment. This CLI is not a deployed gateway.
 
 ## Official references
 - [Participant guide](https://cerebralvalley.ai/e/meta-ai-developer-hackathon/details)
